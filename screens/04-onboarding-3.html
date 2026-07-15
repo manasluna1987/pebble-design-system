@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pebble — Onboarding 3</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #EDECE8; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  .frame { width: 390px; height: 844px; background: #F7F5F1; border-radius: 2px; box-shadow: 0 30px 80px rgba(0,0,0,0.25); display: flex; flex-direction: column; position: relative; overflow: hidden; }
+  .skip { position: absolute; top: 26px; right: 22px; font-size: 13.5px; font-weight: 600; color: #6B6862; opacity: 0; }
+  .illustration { height: 380px; margin-top: 90px; display: flex; align-items: center; justify-content: center; }
+  .illustration .blob { width: 220px; height: 220px; border-radius: 50%; background: oklch(0.62 0.17 255 / 0.16); display: flex; align-items: center; justify-content: center; }
+  .illustration .shape { width: 96px; height: 96px; border-radius: 2px; background: oklch(0.62 0.17 255); transform: rotate(45deg); }
+  .content { padding: 8px 32px 0; }
+  .headline { font-size: 23px; font-weight: 800; letter-spacing: -0.5px; color: #1C1B19; margin-bottom: 12px; }
+  .subtext { font-size: 14.5px; line-height: 1.5; color: #6B6862; }
+  .footer { margin-top: auto; padding: 0 24px 40px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+  .dots { display: flex; gap: 8px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #EDEBE6; }
+  .dot.active { width: 22px; background: oklch(0.62 0.17 255); }
+  .next-btn { width: 100%; height: 52px; border-radius: 18px; background: oklch(0.62 0.17 255); color: #F7F5F1; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(0,0,0,0.06); }
+  .placeholder-note { position: absolute; bottom: 8px; left: 0; right: 0; text-align: center; font-size: 10px; color: #999; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="skip">Skip</div>
+    <div class="illustration">
+      <div class="blob">
+        <div class="shape"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="headline">Onboarding headline 3</div>
+      <div class="subtext">Placeholder supporting copy — replace with real product value proposition once defined.</div>
+    </div>
+    <div class="footer">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot active"></div>
+      </div>
+      <div class="next-btn">Get started</div>
+    </div>
+    <div class="placeholder-note">Placeholder copy — not final</div>
+  </div>
+</body>
+</html>

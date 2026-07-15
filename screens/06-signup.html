@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pebble — Sign up</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #EDECE8; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  .frame { width: 390px; height: 844px; background: #F7F5F1; border-radius: 2px; box-shadow: 0 30px 80px rgba(0,0,0,0.25); display: flex; flex-direction: column; position: relative; overflow: hidden; padding: 64px 28px 32px; }
+  .mark { width: 44px; height: 44px; margin-bottom: 24px; }
+  .headline { font-size: 23px; font-weight: 800; letter-spacing: -0.5px; color: #1C1B19; margin-bottom: 6px; }
+  .subtext { font-size: 14px; color: #6B6862; margin-bottom: 26px; }
+  .field-group { margin-bottom: 14px; }
+  .label { font-size: 11.5px; font-weight: 600; color: #57544E; margin-bottom: 6px; }
+  .field { height: 50px; border-radius: 8px; background: #FFFFFF; border: 1px solid #EDEBE6; display: flex; align-items: center; padding: 0 16px; font-size: 14.5px; color: #8A8782; }
+  .terms { font-size: 11.5px; color: #8A8782; line-height: 1.5; margin: 6px 0 22px; }
+  .terms b { color: #57544E; font-weight: 600; }
+  .signup-btn { width: 100%; height: 52px; border-radius: 18px; background: oklch(0.68 0.19 145); color: #F7F5F1; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(0,0,0,0.06); margin-bottom: 22px; }
+  .divider { display: flex; align-items: center; gap: 12px; font-size: 11.5px; color: #8A8782; margin-bottom: 22px; }
+  .divider .line { flex: 1; height: 1px; background: #EDEBE6; }
+  .social-row { display: flex; gap: 12px; }
+  .social-btn { flex: 1; height: 48px; border-radius: 8px; background: #FFFFFF; border: 1px solid #EDEBE6; display: flex; align-items: center; justify-content: center; font-size: 13.5px; font-weight: 600; color: #1C1B19; }
+  .login-link { margin-top: auto; text-align: center; font-size: 13.5px; color: #6B6862; }
+  .login-link b { color: #1C1B19; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <svg class="mark" viewBox="0 0 100 100"><path d="M50,14 C66,10 82,20 87,38 C92,56 86,74 70,84 C54,94 32,92 20,78 C8,64 8,44 18,30 C25,20 38,17 50,14 Z" fill="oklch(0.68 0.19 145)"/></svg>
+    <div class="headline">Create account</div>
+    <div class="subtext">Get started with Pebble.</div>
+
+    <div class="field-group">
+      <div class="label">Full name</div>
+      <div class="field">Jane Doe</div>
+    </div>
+    <div class="field-group">
+      <div class="label">Email</div>
+      <div class="field">you@example.com</div>
+    </div>
+    <div class="field-group">
+      <div class="label">Password</div>
+      <div class="field">••••••••</div>
+    </div>
+
+    <div class="terms">By continuing, you agree to the <b>Terms of Service</b> and <b>Privacy Policy</b>.</div>
+
+    <div class="signup-btn">Create account</div>
+
+    <div class="divider"><div class="line"></div>or<div class="line"></div></div>
+    <div class="social-row">
+      <div class="social-btn">Google</div>
+      <div class="social-btn">Apple</div>
+    </div>
+
+    <div class="login-link">Already have an account? <b>Log in</b></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pebble Brand Guidelines</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #F7F5F1; color: #1C1B19; padding: 48px 24px 96px; }
+  main { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 4px; }
+  .subtitle { font-size: 14.5px; color: #6B6862; margin-bottom: 48px; max-width: 560px; line-height: 1.5; }
+  section { margin-bottom: 56px; }
+  h2 { font-size: 19px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid #EDEBE6; }
+  .logo-row { display: flex; flex-wrap: wrap; gap: 16px; }
+  .logo-card { background: #FFFFFF; border-radius: 8px; padding: 22px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); flex: 1 1 200px; }
+  .logo-card.dark { background: #1C1B19; }
+  .logo-card img, .logo-card svg { display: block; max-width: 100%; height: auto; }
+  .logo-card .label { font-size: 11.5px; color: #6B6862; margin-top: 14px; font-weight: 500; }
+  .logo-card.dark .label { color: #8A8782; }
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .swatch { border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .swatch .fill { height: 64px; }
+  .swatch .meta { background: #FFFFFF; padding: 10px 12px; }
+  .swatch .name { font-size: 11.5px; font-weight: 600; }
+  .swatch .value { font-size: 10.5px; color: #6B6862; font-family: ui-monospace, monospace; margin-top: 2px; word-break: break-all; }
+  .type-row { display: flex; align-items: baseline; gap: 16px; padding: 10px 0; border-bottom: 1px solid #F0EFEA; }
+  .type-row .sample { font-weight: 700; }
+  .type-row .meta { font-size: 11.5px; color: #8A8782; font-family: ui-monospace, monospace; }
+  .weight-grid { display: flex; flex-wrap: wrap; gap: 24px; }
+  .weight-item .sample { font-size: 19px; }
+  .weight-item .meta { font-size: 10.5px; color: #8A8782; margin-top: 4px; }
+  .misc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .radius-row, .shadow-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; }
+  .radius-box { width: 40px; height: 40px; background: oklch(0.68 0.19 145); flex-shrink: 0; }
+  .shadow-box { width: 40px; height: 40px; background: #fff; border-radius: 8px; flex-shrink: 0; }
+  .name-val { font-size: 12.5px; }
+  .name-val .n { font-weight: 600; }
+  .name-val .v { color: #8A8782; font-family: ui-monospace, monospace; font-size: 10.5px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pebble</h1>
+  <p class="subtitle">Brand guidelines — first draft, derived from the source home screen design. Pending sign-off. See <code>docs/brand-guidelines.md</code> for usage rules.</p>
+
+  <section>
+    <h2>Logo</h2>
+    <div class="logo-row">
+      <div class="logo-card">
+        <svg width="60" height="60" viewBox="0 0 100 100"><path d="M50,14 C66,10 82,20 87,38 C92,56 86,74 70,84 C54,94 32,92 20,78 C8,64 8,44 18,30 C25,20 38,17 50,14 Z" fill="oklch(0.68 0.19 145)"/><path d="M38,32 C44,28 52,29 55,35 C58,41 54,47 47,47 C40,47 34,41 34,36 C34,34.5 35.5,33 38,32 Z" fill="#F7F5F1" opacity="0.55"/></svg>
+        <div class="label">pebble-mark.svg</div>
+      </div>
+      <div class="logo-card">
+        <svg width="180" height="52" viewBox="0 0 220 64" font-family="Inter, sans-serif"><g transform="translate(0,2) scale(0.56)"><path d="M50,14 C66,10 82,20 87,38 C92,56 86,74 70,84 C54,94 32,92 20,78 C8,64 8,44 18,30 C25,20 38,17 50,14 Z" fill="oklch(0.68 0.19 145)"/><path d="M38,32 C44,28 52,29 55,35 C58,41 54,47 47,47 C40,47 34,41 34,36 C34,34.5 35.5,33 38,32 Z" fill="#F7F5F1" opacity="0.55"/></g><text x="64" y="42" font-size="30" font-weight="800" letter-spacing="-0.5" fill="#1C1B19">Pebble</text></svg>
+        <div class="label">pebble-logo.svg (light bg)</div>
+      </div>
+      <div class="logo-card dark">
+        <svg width="180" height="52" viewBox="0 0 220 64" font-family="Inter, sans-serif"><g transform="translate(0,2) scale(0.56)"><path d="M50,14 C66,10 82,20 87,38 C92,56 86,74 70,84 C54,94 32,92 20,78 C8,64 8,44 18,30 C25,20 38,17 50,14 Z" fill="oklch(0.68 0.19 145)"/><path d="M38,32 C44,28 52,29 55,35 C58,41 54,47 47,47 C40,47 34,41 34,36 C34,34.5 35.5,33 38,32 Z" fill="#F7F5F1" opacity="0.55"/></g><text x="64" y="42" font-size="30" font-weight="800" letter-spacing="-0.5" fill="#F7F5F1">Pebble</text></svg>
+        <div class="label">pebble-logo-dark.svg (dark bg)</div>
+      </div>
+      <div class="logo-card">
+        <svg width="180" height="52" viewBox="0 0 220 64" font-family="Inter, sans-serif"><g transform="translate(0,2) scale(0.56)"><path d="M50,14 C66,10 82,20 87,38 C92,56 86,74 70,84 C54,94 32,92 20,78 C8,64 8,44 18,30 C25,20 38,17 50,14 Z" fill="#1C1B19"/></g><text x="64" y="42" font-size="30" font-weight="800" letter-spacing="-0.5" fill="#1C1B19">Pebble</text></svg>
+        <div class="label">pebble-logo-mono.svg</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Color — Brand</h2>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="fill" style="background:oklch(0.68 0.19 145)"></div><div class="meta"><div class="name">brand.primary</div><div class="value">oklch(0.68 0.19 145)</div></div></div>
+      <div class="swatch"><div class="fill" style="background:oklch(0.62 0.19 35)"></div><div class="meta"><div class="name">brand.accent</div><div class="value">oklch(0.62 0.19 35)</div></div></div>
+      <div class="swatch"><div class="fill" style="background:oklch(0.72 0.18 45)"></div><div class="meta"><div class="name">brand.accentAlt</div><div class="value">oklch(0.72 0.18 45)</div></div></div>
+      <div class="swatch"><div class="fill" style="background:oklch(0.62 0.17 255)"></div><div class="meta"><div class="name">brand.info</div><div class="value">oklch(0.62 0.17 255)</div></div></div>
+      <div class="swatch"><div class="fill" style="background:oklch(0.75 0.16 90)"></div><div class="meta"><div class="name">brand.warning</div><div class="value">oklch(0.75 0.16 90)</div></div></div>
+      <div class="swatch"><div class="fill" style="background:oklch(0.6 0.2 25)"></div><div class="meta"><div class="name">brand.danger</div><div class="value">oklch(0.6 0.2 25)</div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Color — Neutral</h2>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="fill" style="background:#1C1B19"></div><div class="meta"><div class="name">ink</div><div class="value">#1C1B19</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#57544E"></div><div class="meta"><div class="name">textSecondary</div><div class="value">#57544E</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#6B6862"></div><div class="meta"><div class="name">textTertiary</div><div class="value">#6B6862</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#8A8782"></div><div class="meta"><div class="name">textMuted</div><div class="value">#8A8782</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#FFFFFF;border-bottom:1px solid #EDEBE6"></div><div class="meta"><div class="name">surface</div><div class="value">#FFFFFF</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#F0EFEA"></div><div class="meta"><div class="name">surfaceAlt</div><div class="value">#F0EFEA</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#EFEDE8"></div><div class="meta"><div class="name">surfaceAlt2</div><div class="value">#EFEDE8</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#EDECE8"></div><div class="meta"><div class="name">surfaceAlt3</div><div class="value">#EDECE8</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#EDEBE6"></div><div class="meta"><div class="name">surfaceAlt4</div><div class="value">#EDEBE6</div></div></div>
+      <div class="swatch"><div class="fill" style="background:#F7F5F1"></div><div class="meta"><div class="name">background</div><div class="value">#F7F5F1</div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Typography</h2>
+    <div class="type-row"><div class="sample" style="font-size:23px">Pebble type scale</div><div class="meta">3xl — 23px / 800</div></div>
+    <div class="type-row"><div class="sample" style="font-size:20px;font-weight:700">Pebble type scale</div><div class="meta">2xl — 20px / 700</div></div>
+    <div class="type-row"><div class="sample" style="font-size:19px;font-weight:700">Pebble type scale</div><div class="meta">xl2 — 19px / 700</div></div>
+    <div class="type-row"><div class="sample" style="font-size:18px;font-weight:600">Pebble type scale</div><div class="meta">xl — 18px / 600</div></div>
+    <div class="type-row"><div class="sample" style="font-size:16px;font-weight:600">Pebble type scale</div><div class="meta">lg — 16px / 600</div></div>
+    <div class="type-row"><div class="sample" style="font-size:15px;font-weight:500">Pebble type scale</div><div class="meta">md — 15px / 500</div></div>
+    <div class="type-row"><div class="sample" style="font-size:14px;font-weight:400">Pebble type scale</div><div class="meta">base — 14px / 400</div></div>
+    <div class="type-row"><div class="sample" style="font-size:11.5px;font-weight:500">Pebble type scale</div><div class="meta">sm — 11.5px / 500</div></div>
+    <div class="type-row"><div class="sample" style="font-size:10px;font-weight:500">Pebble type scale</div><div class="meta">xs — 10px / 500</div></div>
+
+    <div style="height:28px"></div>
+    <div class="weight-grid">
+      <div class="weight-item"><div class="sample" style="font-weight:400">Pebble</div><div class="meta">400 regular</div></div>
+      <div class="weight-item"><div class="sample" style="font-weight:500">Pebble</div><div class="meta">500 medium</div></div>
+      <div class="weight-item"><div class="sample" style="font-weight:600">Pebble</div><div class="meta">600 semibold</div></div>
+      <div class="weight-item"><div class="sample" style="font-weight:700">Pebble</div><div class="meta">700 bold</div></div>
+      <div class="weight-item"><div class="sample" style="font-weight:800">Pebble</div><div class="meta">800 extrabold</div></div>
+    </div>
+  </section>
+
+  <section class="misc-grid">
+    <div>
+      <h2>Radius</h2>
+      <div class="radius-row"><div class="radius-box" style="border-radius:2px"></div><div class="name-val"><div class="n">sharp</div><div class="v">2px</div></div></div>
+      <div class="radius-row"><div class="radius-box" style="border-radius:8px"></div><div class="name-val"><div class="n">md</div><div class="v">8px</div></div></div>
+      <div class="radius-row"><div class="radius-box" style="border-radius:18px"></div><div class="name-val"><div class="n">lg</div><div class="v">18px</div></div></div>
+      <div class="radius-row"><div class="radius-box" style="border-radius:30px"></div><div class="name-val"><div class="n">2xl</div><div class="v">30px</div></div></div>
+      <div class="radius-row"><div class="radius-box" style="border-radius:50%"></div><div class="name-val"><div class="n">full</div><div class="v">50%</div></div></div>
+    </div>
+    <div>
+      <h2>Shadow</h2>
+      <div class="shadow-row"><div class="shadow-box" style="box-shadow:0 1px 4px rgba(0,0,0,0.08)"></div><div class="name-val"><div class="n">xs</div><div class="v">0 1px 4px rgba(0,0,0,.08)</div></div></div>
+      <div class="shadow-row"><div class="shadow-box" style="box-shadow:0 4px 18px rgba(0,0,0,0.05)"></div><div class="name-val"><div class="n">md</div><div class="v">0 4px 18px rgba(0,0,0,.05)</div></div></div>
+      <div class="shadow-row"><div class="shadow-box" style="box-shadow:0 10px 30px rgba(0,0,0,0.25)"></div><div class="name-val"><div class="n">xl</div><div class="v">0 10px 30px rgba(0,0,0,.25)</div></div></div>
+      <div class="shadow-row"><div class="shadow-box" style="box-shadow:0 6px 16px oklch(0.62 0.19 35 / 0.5)"></div><div class="name-val"><div class="n">glow</div><div class="v">accent glow</div></div></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
