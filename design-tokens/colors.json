@@ -1,1 +1,29 @@
-{}
+{
+  "brand": {
+    "primary": "oklch(0.68 0.19 145)",
+    "accent": "oklch(0.62 0.19 35)",
+    "accentAlt": "oklch(0.72 0.18 45)",
+    "info": "oklch(0.62 0.17 255)",
+    "warning": "oklch(0.75 0.16 90)",
+    "danger": "oklch(0.6 0.2 25)"
+  },
+  "neutral": {
+    "ink": "#1C1B19",
+    "textSecondary": "#57544E",
+    "textTertiary": "#6B6862",
+    "textMuted": "#8A8782",
+    "border": "#999999",
+    "borderMuted": "#666666",
+    "surface": "#FFFFFF",
+    "surfaceAlt": "#F0EFEA",
+    "surfaceAlt2": "#EFEDE8",
+    "surfaceAlt3": "#EDECE8",
+    "surfaceAlt4": "#EDEBE6",
+    "background": "#F7F5F1"
+  },
+  "utility": {
+    "coral": "#FF8A80",
+    "maroonDark": "#5C2B2E",
+    "maroonDarker": "#2A1215"
+  }
+}

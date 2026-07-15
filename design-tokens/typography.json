@@ -1,1 +1,35 @@
-{}
+{
+  "fontFamily": {
+    "primary": "'Inter', -apple-system, BlinkMacSystemFont, sans-serif"
+  },
+  "fontSize": {
+    "xs": "10px",
+    "xs2": "10.5px",
+    "sm": "11.5px",
+    "sm2": "13.5px",
+    "base": "14px",
+    "base2": "14.5px",
+    "md": "15px",
+    "lg": "16px",
+    "lg2": "16.5px",
+    "xl": "18px",
+    "xl2": "19px",
+    "2xl": "20px",
+    "3xl": "23px"
+  },
+  "fontWeight": {
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "extrabold": 800
+  },
+  "lineHeight": {
+    "base": 1.5
+  },
+  "letterSpacing": {
+    "tight": "-0.2px",
+    "tighter": "-0.3px",
+    "tightest": "-0.5px"
+  }
+}
